@@ -16,9 +16,9 @@ public class TestingMain {
             System.out.println("Error!");
         }
 
-        Calculator calculator = new Calculator(5,3);
-        double result2 = calculator.add();
-        double result3 = calculator.substract();
+        Calculator calculator = new Calculator();
+        double result2 = calculator.add(5,3);
+        double result3 = calculator.substract(5,3);
         if(result2 == 8 && result3 == 2)
         {
             System.out.println("Test 2 OK");

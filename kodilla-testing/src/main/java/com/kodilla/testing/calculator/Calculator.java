@@ -1,21 +1,15 @@
 package com.kodilla.testing.calculator;
 
 public class Calculator {
-    private double x;
-    private double y;
-    public Calculator(double x, double y)
+
+    public double add(double x,double y)
     {
-        this.x = x;
-        this.y = y;
-    }
-    public double add()
-    {
-        double v = this.x + this.y;
+        double v = x + y;
         return v;
     }
-    public double substract()
+    public double substract(double x, double y)
     {
-        double z = this.x - this.y;
+        double z = x - y;
         return z;
     }
 
