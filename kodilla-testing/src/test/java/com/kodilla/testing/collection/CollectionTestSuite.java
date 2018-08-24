@@ -26,7 +26,7 @@ public class CollectionTestSuite {
         ArrayList<Integer> resultList = newExterminator.exterminate(newList);
         System.out.println("Testing how empty list works");
         //Then
-        Assert.assertEquals(resultList.size(),0);
+        Assert.assertEquals(0, resultList.size());
     }
     @Test
     public void testOddNumbersExterminatorNormalList()
@@ -46,7 +46,7 @@ public class CollectionTestSuite {
         correctList.add(6);
         System.out.println("Testing how list with odd and even numbers works");
         //Then
-        Assert.assertEquals(resultList, correctList);
+        Assert.assertEquals(correctList, resultList);
     }
 
 
