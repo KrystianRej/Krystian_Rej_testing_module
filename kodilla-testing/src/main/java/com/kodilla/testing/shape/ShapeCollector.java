@@ -16,7 +16,16 @@ public class ShapeCollector {
     }
     public Shape getFigure(int n)
     {
-        return shapesCollection.get(n);
+        Shape temporary = null;
+        if((n >= 0) && (n <= shapesCollection.size()))
+        {
+            temporary = shapesCollection.get(n);
+        }
+        else
+        {
+            System.out.println("Zla wartosc argumentu");
+        }
+        return temporary;
     }
     public String showFigures()
     {
