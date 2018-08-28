@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" tests="11" skipped="0" failures="0" errors="0" timestamp="2018-08-26T22:48:34" hostname="Komputer" time="0.081">
+  <properties/>
+  <testcase name="testCalculateAdvStatistics10" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.074"/>
+  <testcase name="testCalculateAdvStatistics" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
+  <testcase name="testShowStatistics" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatistics2" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatistics3" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatistics4" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatistics5" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatistics6" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatistics7" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatistics8" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatistics9" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
+  <system-out><![CDATA[Test Suite: begin
+Preparing to execute test #1
+Test Case: end
+Preparing to execute test #2
+Test Case: end
+Preparing to execute test #3
+Test Case: end
+Preparing to execute test #4
+Test Case: end
+Preparing to execute test #5
+Test Case: end
+Preparing to execute test #6
+Test Case: end
+Preparing to execute test #7
+Test Case: end
+Preparing to execute test #8
+Test Case: end
+Preparing to execute test #9
+Test Case: end
+Preparing to execute test #10
+Test Case: end
+Preparing to execute test #11
+Test Case: end
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
