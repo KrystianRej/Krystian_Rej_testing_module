@@ -8,14 +8,14 @@ import java.util.OptionalDouble;
 public class ArrayOperationsTestSuite {
     @Test
     public void testGetAverage(){
+        //Given
         int[] table = {1,15,42,35,11};
 
-        double expectedResult =  104;
-
+        //When
+        double expectedResult =  20.8;
         double result = ArrayOperations.getAverage(table);
 
-
-
+        //Then
         Assert.assertEquals(expectedResult, result,0);
     }
 }
