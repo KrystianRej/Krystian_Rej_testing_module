@@ -21,7 +21,7 @@ public class FirstChallenge {
             double result = firstChallenge.divide(3, 0);
             System.out.println(result);
         } catch (ArithmeticException e){
-            System.out.println("You can not divide by zero");
+            System.out.println("You can't divide by zero");
         }
 
     }
