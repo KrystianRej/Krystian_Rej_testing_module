@@ -3,6 +3,7 @@ package com.kodilla.good.patterns.challenges;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Collection;
 import java.util.stream.Collectors;
 
 public class MovieStoreTestSuite {
@@ -12,8 +13,8 @@ public class MovieStoreTestSuite {
         MovieStore movieStore = new MovieStore();
         //When
         String allMovieTitlesWithExclamationMarks = movieStore.getMovies()
-                .entrySet().stream()
-                .flatMap(entry -> entry.getValue().stream())
+                .values().stream()
+                .flatMap(Collection::stream)
                 .collect(Collectors.joining("!","",""));
         System.out.println(allMovieTitlesWithExclamationMarks);
         //Then
