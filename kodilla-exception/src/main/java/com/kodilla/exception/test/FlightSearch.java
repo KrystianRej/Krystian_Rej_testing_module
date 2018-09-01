@@ -16,7 +16,7 @@ public class FlightSearch {
         airportMap.put("Sopot airport", false);
 
         if(airportMap.containsKey(flight.getArrivalAirport())
-                && (airportMap.get(flight.getArrivalAirport()) == true)){
+                && (airportMap.get(flight.getArrivalAirport()))){
             return "There is a flight to:"
                     + flight.getArrivalAirport() + " and it is open";
         } else {
