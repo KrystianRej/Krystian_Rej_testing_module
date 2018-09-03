@@ -1,0 +1,3 @@
+Buyer: Marian Kowalski
+Everything went well?: true
+Wielka kula for: Marian Kowalski will be send soon
