@@ -7,11 +7,7 @@ public class CheckTheRequest implements ProductValidation {
     public boolean isProductValiable(Map<String, Integer> productsMap, String name, double money) {
         if(productsMap.containsKey(name))
         {
-            if(productsMap.get(name) < money){
-                return true;
-            } else {
-                return false;
-            }
+            return productsMap.get(name) < money;
         } else {
             return false;
         }

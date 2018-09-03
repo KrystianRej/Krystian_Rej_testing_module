@@ -8,10 +8,14 @@ public class Allegro {
         CreateBuyRequest createBuyRequest = new CreateBuyRequest();
         BuyRequest buyRequest = createBuyRequest.retrieve();
 
-        ProductOrderService productOrderService = new ProductOrderService(new InformationService(), new CheckTheRequest(), new ProductsInShop());
+        ProductOrderService productOrderService = new ProductOrderService(new InformationService(),
+                new CheckTheRequest(), new ProductsInShop());
+
         SellingDto doneTransaction = productOrderService.process(buyRequest);
+        SaveSellingInfoToFile saveToFile = new SaveSellingInfoToFile();
         try {
-            doneTransaction.writeFile("infoAboutTransaction.txt");
+            saveToFile.writeFile(doneTransaction,
+                    "D:\\zadaniazmatlaba\\kodilla-course\\kodilla-good-patterns\\src\\main\\resources\\infoAboutTransaction");
         } catch(IOException e) {
             System.out.println("Problem with overwriting file");
         }
