@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class ValidateOrder implements OrderValidation{
     @Override
-    public boolean CanShopBuyIt(Map<String, Integer> products,
+    public boolean canShopBuyIt(Map<String, Integer> products,
                                 String nameOfTheProduct, int numberOfTheProductToOrder){
         if(products.containsKey(nameOfTheProduct))
         {

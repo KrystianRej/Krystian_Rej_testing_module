@@ -8,7 +8,7 @@ public class HealthyShop extends Producent {
 
     @Override
     public ShopOrderInfo process(Shop shop){
-        boolean isValid = validation.CanShopBuyIt(newProducent.productsList(),
+        boolean isValid = validation.canShopBuyIt(newProducent.productsList(),
                 shop.getProductName(), shop.getAmountOfProduct());
         //Second condition checks if product is properly certificated with the required code, which is Alabama4561 now
         if(isValid && (newProducent.certification(newProducent.productsList()).get(shop.getProductName()).equals("Alabama4561"))){

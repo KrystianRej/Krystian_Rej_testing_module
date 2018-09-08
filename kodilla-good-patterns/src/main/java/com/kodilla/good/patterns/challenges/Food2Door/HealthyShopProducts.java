@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HealthyShopProducts implements ProducentProducts{
+
     @Override
     public Map<String, Integer> productsList(){
         Map<String, Integer> products = new HashMap<>();
@@ -12,5 +13,4 @@ public class HealthyShopProducts implements ProducentProducts{
         products.put("Banany", 1500);
         return products;
     }
-
 }

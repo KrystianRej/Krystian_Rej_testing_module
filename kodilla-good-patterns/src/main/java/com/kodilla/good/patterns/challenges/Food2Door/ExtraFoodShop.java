@@ -8,7 +8,7 @@ public class ExtraFoodShop extends Producent {
 
     @Override
     public ShopOrderInfo process(Shop shop){
-        boolean isValid = validation.CanShopBuyIt(newProducent.productsList(),
+        boolean isValid = validation.canShopBuyIt(newProducent.productsList(),
                 shop.getProductName(), shop.getAmountOfProduct());
         if(isValid){
             return new ShopOrderInfo(shop, true);
