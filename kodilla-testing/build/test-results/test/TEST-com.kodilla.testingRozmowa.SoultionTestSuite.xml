@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testingRozmowa.SoultionTestSuite" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-09-08T23:14:18" hostname="Komputer" time="0.003">
+  <properties/>
+  <testcase name="testSolution1" classname="com.kodilla.testingRozmowa.SoultionTestSuite" time="0.001"/>
+  <testcase name="testSolution2" classname="com.kodilla.testingRozmowa.SoultionTestSuite" time="0.0"/>
+  <testcase name="testSolution3" classname="com.kodilla.testingRozmowa.SoultionTestSuite" time="0.0"/>
+  <testcase name="testSolution4" classname="com.kodilla.testingRozmowa.SoultionTestSuite" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

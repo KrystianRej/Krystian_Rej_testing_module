@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" tests="11" skipped="0" failures="0" errors="0" timestamp="2018-08-30T14:27:11" hostname="Komputer" time="0.093">
+<testsuite name="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" tests="11" skipped="0" failures="0" errors="0" timestamp="2018-09-08T23:14:17" hostname="Komputer" time="0.194">
   <properties/>
-  <testcase name="testCalculateAdvStatistics10" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.088"/>
+  <testcase name="testCalculateAdvStatistics10" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.185"/>
   <testcase name="testCalculateAdvStatistics" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
-  <testcase name="testShowStatistics" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
-  <testcase name="testCalculateAdvStatistics2" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
-  <testcase name="testCalculateAdvStatistics3" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
-  <testcase name="testCalculateAdvStatistics4" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
+  <testcase name="testShowStatistics" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatistics2" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatistics3" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatistics4" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
   <testcase name="testCalculateAdvStatistics5" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
-  <testcase name="testCalculateAdvStatistics6" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
-  <testcase name="testCalculateAdvStatistics7" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatistics6" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatistics7" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
   <testcase name="testCalculateAdvStatistics8" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.0"/>
-  <testcase name="testCalculateAdvStatistics9" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatistics9" classname="com.kodilla.testing.forum.statistics.CalculateForumThingsTestSuite" time="0.002"/>
   <system-out><![CDATA[Test Suite: begin
 Preparing to execute test #1
 Test Case: end
