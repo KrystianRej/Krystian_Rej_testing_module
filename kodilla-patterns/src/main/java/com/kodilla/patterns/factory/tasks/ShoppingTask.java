@@ -4,7 +4,7 @@ public class ShoppingTask implements Task{
     private String taskName;
     private String whatToBuy;
     private double quantity;
-    private double resultOfTaskExecution = 0;
+    private boolean resultOfTaskExecution;
 
     public ShoppingTask(String taskName, String whatToBuy, double quantity) {
         this.taskName = taskName;
@@ -20,15 +20,15 @@ public class ShoppingTask implements Task{
     @Override
     public void executeTask() {
         if(whatToBuy.length() <= 10) {
-            resultOfTaskExecution = quantity * 10;
+            resultOfTaskExecution = true;
         } else {
-            resultOfTaskExecution = quantity * 2;
+            resultOfTaskExecution = false;
         }
     }
 
     @Override
     public boolean isTaskExecuted() {
-        return resultOfTaskExecution > 12;
+        return this.resultOfTaskExecution;
     }
 }
 

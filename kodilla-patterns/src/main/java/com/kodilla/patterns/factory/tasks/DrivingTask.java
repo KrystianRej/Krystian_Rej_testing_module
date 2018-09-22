@@ -4,7 +4,7 @@ public class DrivingTask implements Task {
     private String taskName;
     private String where;
     private String using;
-    private double resultOfTaskExecution = 0;
+    private boolean resultOfTaskExecution;
 
     public DrivingTask(String taskName, String where, String using) {
         this.taskName = taskName;
@@ -20,14 +20,14 @@ public class DrivingTask implements Task {
     @Override
     public void executeTask() {
         if(where.length() != using.length()) {
-            resultOfTaskExecution = using.length() * 150;
+            resultOfTaskExecution = true;
         } else {
-            resultOfTaskExecution = 55;
+            resultOfTaskExecution = false;
         }
     }
 
     @Override
     public boolean isTaskExecuted() {
-        return resultOfTaskExecution > 1000;
+        return this.resultOfTaskExecution;
     }
 }

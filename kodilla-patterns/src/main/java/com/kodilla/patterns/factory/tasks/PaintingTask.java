@@ -4,7 +4,7 @@ public class PaintingTask implements Task {
     private String taskName;
     private String color;
     private String whatToPaint;
-    private double resultOfTaskExecution = 0;
+    private boolean resultOfTaskExecution;
 
     public PaintingTask(String taskName, String color, String whatToPaint) {
         this.taskName = taskName;
@@ -20,14 +20,14 @@ public class PaintingTask implements Task {
     @Override
     public void executeTask() {
         if(color.toCharArray()[0] == whatToPaint.toCharArray()[0]) {
-            resultOfTaskExecution = 100;
+            resultOfTaskExecution = true;
         } else {
-            resultOfTaskExecution = 50;
+            resultOfTaskExecution = false;
         }
     }
 
     @Override
     public boolean isTaskExecuted() {
-       return resultOfTaskExecution == 100;
+       return this.resultOfTaskExecution;
     }
 }

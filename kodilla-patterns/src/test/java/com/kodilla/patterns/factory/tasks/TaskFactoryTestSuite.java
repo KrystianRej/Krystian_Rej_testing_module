@@ -36,7 +36,7 @@ public class TaskFactoryTestSuite {
         Task newTask = factory.chooseTask(TaskFactory.DRIVINGTASK);
         newTask.executeTask();
         //Then
-        Assert.assertEquals(false, newTask.isTaskExecuted());
+        Assert.assertEquals(true, newTask.isTaskExecuted());
         Assert.assertEquals("Driving", newTask.getTaskName());
     }
 }
