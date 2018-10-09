@@ -106,16 +106,14 @@ public class CompanyDaoTestSuite {
         try {
             Assert.assertEquals(2, shortName.size());
             Assert.assertEquals(1, skrzynia.size());
-        } finally {
-            try {
-                companyDao.delete(id1);
-                companyDao.delete(id2);
-                companyDao.delete(id3);
+            companyDao.delete(id1);
+            companyDao.delete(id2);
+            companyDao.delete(id3);
             } catch (Exception e) {
                 //do nothing
-            }
         }
     }
 }
+
 
 
