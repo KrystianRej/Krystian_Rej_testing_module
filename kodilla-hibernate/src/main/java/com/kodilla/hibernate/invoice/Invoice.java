@@ -11,6 +11,7 @@ public class Invoice {
     private int id;
     private String number;
     private List<Item> items = new ArrayList<>();
+    private Product product;
 
     public Invoice() {
     }
@@ -52,5 +53,14 @@ public class Invoice {
 
     public void setItems(List<Item> items) {
         this.items = items;
+    }
+
+    @OneToOne (cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
     }
 }

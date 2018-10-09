@@ -32,12 +32,13 @@ public class InvoiceDaoTestSuite {
         invoice.getItems().add(item2);
         item1.setInvoice(invoice);
         item2.setInvoice(invoice);
+        invoice.setProduct(product);
         //When
         invoiceDao.save(invoice);
         int id = invoice.getId();
         //Then
         Assert.assertNotEquals(0, id);
         //CleanUp
-        //invoiceDao.delete(id);
+        invoiceDao.delete(id);
     }
 }
