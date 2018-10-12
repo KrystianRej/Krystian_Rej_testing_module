@@ -32,10 +32,11 @@ public class AirPortTestSuite {
     @Test
     public void testConnectingFlights(){
         Airport airport = new Airport(new ReciveMainTimetable(), new ReciveFlightsFrom(), new ReciveFlightsTo(), new ReciveConnectingFlights());
-        String result = airport.getConnectingFlights().connetingFlights(airport.getSchedule(), "KRAKOW", "WROCLAW", "GDANSK");
+        Set<String> result = airport.getConnectingFlights().connetingFlights(airport.getSchedule(), "KRAKOW", "GDANSK");
 
-        String expected = "Istnieje taki lot:KRAKOW->WROCLAW->GDANSK.";
+        Set<String> timetable = new HashSet<>();
+        timetable.add("Istnieje taki lot:KRAKOW->WROCLAW->GDANSK");
 
-        Assert.assertEquals(expected, result);
+        Assert.assertEquals(timetable, result);
     }
 }
