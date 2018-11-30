@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.forum.ForumTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-09-08T23:14:17" hostname="Komputer" time="0.001">
+<testsuite name="com.kodilla.testing.forum.ForumTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-11-30T18:59:03" hostname="Komputer" time="0.001">
   <properties/>
-  <testcase name="testCaserealName" classname="com.kodilla.testing.forum.ForumTestSuite" time="0.001"/>
+  <testcase name="testCaserealName" classname="com.kodilla.testing.forum.ForumTestSuite" time="0.0"/>
   <testcase name="testCaseUsername" classname="com.kodilla.testing.forum.ForumTestSuite" time="0.0"/>
   <system-out><![CDATA[Test Suite: begin
 Test Case: begin

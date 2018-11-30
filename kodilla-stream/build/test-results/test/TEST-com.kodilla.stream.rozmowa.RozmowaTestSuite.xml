@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.stream.rozmowa.RozmowaTestSuite" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-11-30T18:59:00" hostname="Komputer" time="0.009">
+  <properties/>
+  <testcase name="testAverageJava8" classname="com.kodilla.stream.rozmowa.RozmowaTestSuite" time="0.001"/>
+  <testcase name="testSumJava8" classname="com.kodilla.stream.rozmowa.RozmowaTestSuite" time="0.001"/>
+  <testcase name="testMaxWithEmptyList" classname="com.kodilla.stream.rozmowa.RozmowaTestSuite" time="0.001"/>
+  <testcase name="testCountLength3UsingJava8" classname="com.kodilla.stream.rozmowa.RozmowaTestSuite" time="0.001"/>
+  <testcase name="testMinJava8" classname="com.kodilla.stream.rozmowa.RozmowaTestSuite" time="0.0"/>
+  <testcase name="testCountEmptyStringUsingJava8" classname="com.kodilla.stream.rozmowa.RozmowaTestSuite" time="0.0"/>
+  <testcase name="testSquaresJava8" classname="com.kodilla.stream.rozmowa.RozmowaTestSuite" time="0.001"/>
+  <testcase name="testMaxJava8" classname="com.kodilla.stream.rozmowa.RozmowaTestSuite" time="0.0"/>
+  <testcase name="testDeleteEmptyStringsUsingJava8" classname="com.kodilla.stream.rozmowa.RozmowaTestSuite" time="0.001"/>
+  <testcase name="testMergedStringUsingJava8" classname="com.kodilla.stream.rozmowa.RozmowaTestSuite" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
