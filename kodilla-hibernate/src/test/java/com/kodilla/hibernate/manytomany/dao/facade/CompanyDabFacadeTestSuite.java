@@ -73,9 +73,10 @@ public class CompanyDabFacadeTestSuite {
 
         }
         //Then
+        Assert.assertEquals(1, companyList.size());
+        Assert.assertEquals(1, employeeList.size());
+
         try {
-            Assert.assertEquals(1, companyList.size());
-            Assert.assertEquals(1, employeeList.size());
             companyDao.delete(id1);
             companyDao.delete(id2);
             companyDao.delete(id3);

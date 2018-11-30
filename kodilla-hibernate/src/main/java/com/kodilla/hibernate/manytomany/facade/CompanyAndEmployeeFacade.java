@@ -23,22 +23,24 @@ public class CompanyAndEmployeeFacade {
 
     public List<Company> processCompanyFinding(String partOfTheName) throws FindingByPartOfTheNameException {
         LOGGER.info("Starting the process of searching for a company...");
-        if(companyDao.findByNameContaining(partOfTheName).isEmpty()) {
+        List<Company> companies= companyDao.findByNameContaining(partOfTheName);
+        if(companies.isEmpty()) {
             LOGGER.error(FindingByPartOfTheNameException.ERR_COMPANY_NOT_FOUND);
             throw new FindingByPartOfTheNameException(FindingByPartOfTheNameException.ERR_COMPANY_NOT_FOUND);
         }
         LOGGER.info("Finished, company has been found");
-        return companyDao.findByNameContaining(partOfTheName);
+        return companies;
     }
 
     public List<Employee> processEmployeeFinding(String partOfTheName) throws FindingByPartOfTheNameException {
         LOGGER.info("Starting the process of searching for an employee...");
-        if(employeeDao.findByFirstnameContaining(partOfTheName).isEmpty()) {
+        List<Employee> employees = employeeDao.findByFirstnameContaining(partOfTheName);
+        if(employees.isEmpty()) {
             LOGGER.error(FindingByPartOfTheNameException.ERR_EMPLOYEES_NOT_FOUND);
             throw new FindingByPartOfTheNameException(FindingByPartOfTheNameException.ERR_EMPLOYEES_NOT_FOUND);
         }
         LOGGER.info("Finished, employee has been found");
-        return employeeDao.findByFirstnameContaining(partOfTheName);
+        return employees;
     }
 
 }
