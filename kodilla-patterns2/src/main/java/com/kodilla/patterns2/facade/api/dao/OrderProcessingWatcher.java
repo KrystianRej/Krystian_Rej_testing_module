@@ -1,7 +1,7 @@
 package com.kodilla.patterns2.facade.api.dao;
 
-import com.kodilla.patterns2.dao.calculator.Watcher;
 import com.kodilla.patterns2.facade.api.OrderDto;
+import com.kodilla.patterns2.facade.api.OrderProcessingException;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class OrderProcessingWatcher {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Watcher.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(OrderProcessingException.class);
 
     @Before("execution(* com.kodilla.patterns2.facade.api.OrderFacade.processOrder(..))" +
             "&& args(order, userId) && target(object)")
