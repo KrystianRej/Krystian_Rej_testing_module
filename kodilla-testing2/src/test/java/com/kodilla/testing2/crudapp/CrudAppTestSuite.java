@@ -4,6 +4,7 @@ import com.kodilla.testing2.config.WebDriverConfig;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -68,7 +69,9 @@ public class CrudAppTestSuite {
                             theForm.findElement(By.xpath(".//button[contains(@class, \"card-creation\")]"));
                     buttonCreateCard.click();
                 });
-        Thread.sleep(5000);
+        Thread.sleep(2000);
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
     }
     private boolean checkTaskExistsInTrello(String taskName) throws InterruptedException{
         final String TRELLO_URL = "https://trello.com/login";
@@ -88,7 +91,7 @@ public class CrudAppTestSuite {
 
         Thread.sleep(2000);
 
-        result = driverTrello.findElements(By.xpath("//span")).stream()
+        result = driverTrello.findElements(By.xpath("//div[@class=\"list-card-details js-card-details\"]/span")).stream()
                 .filter(theSpan -> theSpan.getText().contains(taskName))
                 .collect(Collectors.toList())
                 .size() > 0;
@@ -98,16 +101,17 @@ public class CrudAppTestSuite {
         return result;
     }
     private void deleteCreatedTask(String taskName) throws InterruptedException{
-        driver.navigate().refresh();
+        boolean result = false;
+        Thread.sleep(2000);
         driver.findElements(By.xpath("//form[@class=\"datatable__row\"]")).stream()
                 .filter(anyForm ->
                         anyForm.findElement((By.xpath(".//p[@class=\"datatable__field-value\"]")))
                                 .getText().equals(taskName))
                 .forEach(theForm -> {
-                    WebElement buttonDelete = theForm.findElement(By.xpath(".//button[contains(@class=\"data-task-delete-button\")]"));
+                    ///html/body/main/section[2]/div/form/div/fieldset[1]/button[4]
+                    WebElement buttonDelete = theForm.findElement(By.xpath(".//div/fieldset[@class=\"datatable__row-section datatable__row-section--button-section\"]/button[4]"));
                     buttonDelete.click();
                 });
-        driver.navigate().refresh();
         Thread.sleep(2000);
     }
     @Test
@@ -117,4 +121,8 @@ public class CrudAppTestSuite {
         deleteCreatedTask(taskName);
         assertTrue(checkTaskExistsInTrello(taskName));
     }
+    /*@Test
+    public void testDelete() throws InterruptedException {
+        deleteCreatedTask("przykladowe zadanie");
+    }*/
 }
